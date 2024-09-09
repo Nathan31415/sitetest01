@@ -5,207 +5,11 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Americooking</title>
-        <link rel="icon" href="1.9_RecipePageMedia/baldeagle.png" type="image/x-icon"/>
+        <link rel="icon" href="baldeagle.png" type="image/x-icon"/>
         <link rel="stylesheet" href="1.9_RecipePage.css"/>
         <script>
             window.addEventListener("scroll", () => {document.body.style.setProperty("--scroll", window.pageYOffset / (document.body.offsetHeight - window.innerHeight));}, false);
         </script>
-        <style>
-            html, body {
-                max-width: 100%;
-                overflow-x: hidden;
-            }
-
-            body {
-                background-color: #67a5c7;
-            }
-
-            a:hover, a:visited, a:link, a:active
-            {
-                text-decoration: none;
-            }
-
-            .flex {
-                display: flex;
-                flex-direction: row;
-            }
-
-            /*------- Logo -------*/
-
-            .logodiv {
-                width: 80%;
-                height: 250px;
-                background-image: url("1.9_RecipePageMedia/americanflag.jpg");
-                background-size: 100%;
-                border: 10px solid black;
-                margin: auto;
-                text-align: center;
-            }
-
-            .logotext {
-                font-size: 100px;
-                font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Verdana, sans-serif;
-                color: white;
-                text-shadow: 0 0 25px #000025, 0 0 25px #000025;
-                margin-top: 45px;
-                text-decoration: none;
-            }
-
-            .subtitletext {
-                font-size: 40px;
-                font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Verdana, sans-serif;
-                color: white;
-                text-shadow: 0 0 10px #000025, 0 0 25px #000025;
-                margin-top: -75px;
-                text-decoration: none;
-            }
-
-            /*------- Initial Blocks -------*/
-
-            .containerdiv {
-                margin: auto;
-                width: 80%;
-                display: grid;
-                grid-template-columns: 33% 33% 33%;
-                margin-top: 10px;
-            }
-
-            .inlinediv {
-                width: 88%;
-                height: 200px;
-                display: inline-block;
-                border: 4px solid #000050;
-                margin: auto;
-                border-radius: 10px;
-                padding-left: 15px;
-                padding-right: 10px;
-            }
-
-            .shrinkpadding {
-                margin-top: 10px;
-                margin-bottom: 0px;
-            }
-
-            .heading {
-                font-size: 35px;
-                font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Verdana, sans-serif;
-                color: #000025;
-                text-align: center;
-            }
-
-            .text {
-                font-size: 20px;
-                font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Verdana, sans-serif;
-                color: #000025;
-            }
-
-            #red {
-                background-color: #b54343;
-            }
-
-            #white {
-                background-color: white;
-            }
-
-            #blue {
-                background-color: #4343b5;
-            }
-
-            /*------- Bald Eagle -------*/
-
-            .baldeaglefly {
-                top: 50%;
-                left: -50%;
-                margin-top: -270px;
-                margin-left: -50px;
-                margin-bottom: -40px;
-                position: relative;
-                animation-name: CAWW;
-                animation-iteration-count: 1;
-                animation-duration: 1.6s;
-                animation-play-state: paused;
-                animation-delay: calc(var(--scroll) * -1s);
-            }
-            
-            @keyframes CAWW {
-                0%   {left:20%;}
-                100% {left:-150%;}
-            }
-
-            .behindreveal {
-                font-size: 65px;
-                font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Verdana, sans-serif;
-                color: white;
-                text-shadow: 0 0 10px #000025, 0 0 25px #000025;
-            }
-
-            .revealcontainer {
-                text-align: center;
-                margin-top: 120px;
-            }
-
-            /*------- Links -------*/
-
-            .recipebox {
-                width: 75%;
-                height: 205px;
-                background: white;
-                border: 3px solid #000025;
-                margin: auto;
-                margin-bottom: 20px;
-                border-radius: 40px;
-                padding: 25px;
-                display: flex;
-                flex-direction: row;
-            }
-
-            .recipeimage {
-                border: 3px solid #000025;
-                border-radius: 20px;
-                margin: auto;
-                display: inline-block;
-            }
-
-            .recipedesc {
-                display: inline-block;
-                padding-left: 25px;
-                margin-top: -25px;
-                height: 100px;
-                width: auto;
-            }
-
-            .recipeheading {
-                font-size: 35px;
-                font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Verdana, sans-serif;
-                color: #000000;
-                font-weight: 500;
-            }
-
-            /*------- Recipes -------*/
-
-            .recipeblock {
-                width: 77.5%;
-                background: white;
-                border: 3px solid #000025;
-                margin: auto;
-                margin-top: 40px;
-                margin-bottom: 20px;
-                border-radius: 40px;
-                padding: 25px;
-            }
-
-            .recipetitle {
-                display: inline-block;
-                width: auto;
-                padding-left: 25px;
-                font-size: 36px;
-                margin-top: -50px;
-                margin-bottom: -60px;
-                font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Verdana, sans-serif;
-                color: #000000;
-                font-weight: 500;
-            }
-        </style>
     </head>
     <body>
         <!--Logo Block-->
@@ -235,11 +39,11 @@
         <div class="revealcontainer">
             <p class="behindreveal">AMERICAN DELICACIES</p>
         </div>
-        <img src="1.9_RecipePageMedia/eaglereveal.png" class="baldeaglefly" height="350">
+        <img src="eaglereveal.png" class="baldeaglefly" height="350">
         <!--Links-->
         <div class="recipebox">
             <a href="1.9_RecipePage02.html">
-                <img class="recipeimage" src="1.9_RecipePageMedia/pancakes.jpg" height="200">
+                <img class="recipeimage" src="pancakes.jpg" height="200">
             </a>
             <div class="recipedesc">
                 <a href="1.9_RecipePage02.html">
@@ -250,7 +54,7 @@
         </div>
         <div class="recipebox">
             <a href="1.9_RecipePage03.html">
-                <img class="recipeimage" src="1.9_RecipePageMedia/bratwurst.jpg" height="200">
+                <img class="recipeimage" src="bratwurst.jpg" height="200">
             </a>
             <div class="recipedesc">
                 <a href="1.9_RecipePage03.html">
